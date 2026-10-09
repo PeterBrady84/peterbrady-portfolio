@@ -1,3 +1,4 @@
+import Hero from './components/Hero';
 import Layout from './components/Layout';
 import Navbar from './components/Navbar';
 import Section from './components/Section';
@@ -8,6 +9,7 @@ export default function App() {
     <Layout>
       <Navbar />
       <main>
+        <Hero />
         {navItems.map(({ id, label }) => (
           <Section key={id} id={id} eyebrow="Coming soon" title={label}>
             <p className="text-muted">Placeholder content.</p>
